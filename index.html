@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sand.js</title>
+    <script src="simulator.js"></script>
+</head>
+<body onload="sandJSInit(640, 480, 4);">
+    <canvas class="sandJScanvas" oncontextmenu="return false"></canvas>
+    <div class="elementSelection" style="width: max-content; margin: auto">
+        <button class="sandJSSelection" onclick="changeTool(this)">sand</button>
+        <button class="sandJSSelection" onclick="changeTool(this)">water</button>
+        <button class="sandJSSelection" onclick="changeTool(this)">wood</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;</title>
+    <link rel="stylesheet" href="https://cdstx4.xyz/css/style.css">
+    <script src="simulator.js"></script>
+    <script>
+        const favicon = document.createElement("link");
+        favicon.rel = "icon";
+        document.head.appendChild(favicon);
+        external_update = sim => favicon.href = sim.canvas.toDataURL();
+    </script>
+</head>
+<body onload="sandJSInit(160, 160, 8);">
+    <div class="content">
+    <h1>favicon falling sand</h1>
+    <h2>What the fuck?</h2>
+    <p>
+        Check your favicon. Looks familiar, doesn't it. Oh, it's the canvas below.
+        <br>
+        And for why, before you ask, simply, why not. The falling sand game comeback is here.
+    </p>
+    <hr>
+    <h2>How?</h2>
+    <p>
+        Just a data URL of the canvas you're seeing. That's it.
+        <br>
+        Techniques like this have been used for a couple utilities and games... my turn.
+    </p>
+    <hr>
+    <h2>Browser war type shit?</h2>
+    <p>
+        On Firefox, it refreshes SIGNIFICANTLY faster than Chrome. It's completely worth it.
+        <br>
+        Twice as fast, maybe. Really.
+    </p>
+    <hr>
+    <h2>Info</h2>
+    <p>
+        This actually uses a pretty extensive, moddable interface for falling sand.
+        <br>
+        It even has custom element support with update callbacks, so go on and program a nuke.
+        <br>
+        I highly encourage JS developers to take a peek at this page. 
+        <br>
+        I think it's nice (not neat... the code's ass).
+        <hr>
+        Canvas is there. Play around for a bit.
+        <br>
+    </p>
+    <canvas class="sandJScanvas" oncontextmenu="return false"></canvas>
+    <div class="elementSelection" style="width: max-content; margin: auto">
+        <button class="sandJSSelection" onclick="changeTool(this)">sand</button>
+        <button class="sandJSSelection" onclick="changeTool(this)">water</button>
+        <button class="sandJSSelection" onclick="changeTool(this)">wood</button>
+    </div>
+</body>
+</html>
